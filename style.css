@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0deg, 0%, 60%);
+}
+
+/* Add styles here! */
+
+.max-width-wrapper {
+  margin-bottom: 50px;
+}
+
+.intro-chunk {
+  background-color: hsl(0deg, 0%, 100%);
+  border-bottom: 5px hsl(0deg, 0%, 30%);
+  padding: 20px;
+}
+
+strong {
+  color: hsl(160deg, 100%, 30%);
+}
+
+.card {
+  background-color: hsl(0deg, 0%, 100%);
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.header-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 20px;
+  background-color: hsl(45deg, 100%, 50%);
+  border-bottom: 5px hsl(45deg, 100%, 40%);
+}
+
+.indented-heading {
+  padding-left: 20px;
+}
+
+.txt-container {
+  padding: 10px 20px;
+}
+
+/* For tablets */
+
+@media (min-width: 765px) and (max-width: 1024px) {
+  .intro-chunk {
+    padding-right: 50%;
+  }
+
+  .header-container {
+    margin-right: 50%;
+  }
+}
+
+/* For desktop */
+
+@media (min-width: 1025px) {
+  .intro-chunk {
+    padding-left: 20%;
+    padding-right: 60%;
+  }
+  .card {
+    margin-left: 19%;
+    margin-right: 33%;
+  }
+  .header-container {
+    margin-left: -20px;
+    margin-right: 40%;
+  }
+
+  .indented-heading {
+    padding-left: 40px;
+  }
+}
